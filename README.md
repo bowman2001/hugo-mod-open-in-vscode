@@ -1,6 +1,6 @@
 # hugo-mod-open-in-vscode
 
-The modules contains two partials, which can be placed before and after any HTML element in your templates which does **not contain a link**. 
+The module contains two partials, which can be placed before and after any HTML element in your templates which does **not contain a link**. 
 
 ## Prerequisites
 
@@ -14,4 +14,4 @@ If the local Hugo project is rendered **in server-mode**, the two partials wrap 
 
 ## Security Risk!
 
-To include the path to your local project in a public configuration file may be a security risk. Hugo allows to separate the local development configuration from the production configuration, if this a concern. And you should separate this parameter, then, and exclude the configuration file from version control. 
+To include the path to your local project in a public configuration file may be a security risk. Hugo allows to separate the local development configuration from the production configuration, if this a concern. And you should separate this parameter, then, and exclude it from version control. 
