@@ -10,7 +10,7 @@ The module contains two partials, which can be placed before and after any HTML 
 
 ## Function
 
-If the local Hugo project is rendered **in server-mode**, the two partials wrap a link around the HTML element. The link starts with `vscode:\\` and contains the full path to the current content file. To produce the path the partial needs the parameter `sourcePath` in the configuration. It needs to contain the full path to your local content folder. Without this parameter, nothing happens.
+If the local Hugo project is rendered **in server-mode**, the two partials wrap a link around the HTML element. The link starts with `vscode://file` and then follows the full path to the current content file. To produce the path the partial needs the parameter `sourcePath` in the configuration. It needs to contain the full path to your local content folder. Without this parameter, nothing happens.
 
 ## Security Risk!
 
