@@ -14,4 +14,4 @@ If the local Hugo project is rendered **in server-mode**, the two partials wrap 
 
 ## Security consideration
 
-If and only if Hugo’s server-mode is configured to show the preview under a public URL (by default its not), the full path to the project is visible in the link. Which may be a security concern.  
+If and only if Hugo’s server-mode is configured to show the preview under a public IP address (by default it shows only on localhost), the full path to the project is visible in the link. Which may be a security concern.  
