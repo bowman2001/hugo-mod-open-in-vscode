@@ -4,7 +4,7 @@ title: Hugo-mod- example site
 
 module:
  imports:
-   - path: github.com/bowman2001/hugo-mod-open-in-vscode
+   - path: github.com/bowman2001/hugo-mod-open-in-vscode/v2
 
 params:
   modOpenIn: 
