@@ -1,6 +1,7 @@
 {{- if .Site.IsServer -}}
     {{- with .File -}}
-        {{- $path := print "vscode://file" .Filename  -}}
-        <a {{ printf "href=%q" $path | safeHTMLAttr }} aria-label="Open file in VSCode" rel="nofollow">
+        {{- $label := print "Open file in " site.Params.modOpenIn.name }}
+        {{- $path := print site.Params.modOpenIn.protocol "://file" .Filename  -}}
+        <a {{ printf "href=%q" $path | safeHTMLAttr }} aria-label="{{ $label | safeHTMLAttr }}" rel="nofollow">
     {{- end -}}
 {{- end -}}{{- /**/ -}}

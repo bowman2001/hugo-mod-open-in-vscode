@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ site.Title }}</title>
+    {{- $css := resources.Get "style.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+</head>
+<body>
+{{- partial "file/vscode_start" . }}
+<h1>{{ .Title | site.Home.RenderString }}</h1>
+{{- partial "file/vscode_end" . }}
+{{- .Content }}
+</body>
+</html>
